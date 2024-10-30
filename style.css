@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.countdown {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.time {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.label {
+    font-size: 1rem;
+}
