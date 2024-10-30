@@ -6,7 +6,7 @@ body {
     margin: 0;
     background-color: #282c34;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif; /* Consider using a more modern font */
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
@@ -18,7 +18,12 @@ body {
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
-    overflow: hidden; /* Hide overflow of the main container */
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger font size for the main heading */
+    margin-bottom: 20px; /* Spacing below the heading */
 }
 
 #timer {
@@ -28,49 +33,52 @@ body {
 }
 
 .time-container {
-    flex: 1; /* Equal width for all containers */
+    flex: 1;
 }
 
 .label {
-    font-size: 1rem; /* Font size for labels */
-    margin-bottom: 5px; /* Spacing between label and time */
+    font-size: 1.2rem; /* Slightly larger font size for labels */
+    margin-bottom: 5px;
+    color: #FFD700; /* Gold color for better visibility */
 }
 
 .time {
-    font-size: 3rem; /* Increased font size for time values */
+    font-size: 4rem; /* Larger font size for time values */
+    font-weight: bold; /* Bold for emphasis */
 }
 
 .scrollable-text {
-    max-height: 200px; /* Set max height for scrolling */
-    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 200px;
+    overflow-y: auto;
     margin-top: 20px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.05); /* Slightly different background */
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 5px;
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: #888 #282c34; /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #888 #282c34;
 }
 
 .scrollable-text::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+    width: 8px;
 }
 
 .scrollable-text::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the scrollbar thumb */
-    border-radius: 4px; /* Rounded corners */
+    background: #888;
+    border-radius: 4px;
 }
 
 .scrollable-text::-webkit-scrollbar-track {
-    background: #282c34; /* Background of the scrollbar track */
+    background: #282c34;
 }
 
 .separator {
-    border-top: 2px solid #ffffff; /* White separator line */
-    margin: 10px 0; /* Spacing above and below the separator */
+    border-top: 2px solid #ffffff;
+    margin: 10px 0;
 }
 
 p {
-    margin: 10px 0; /* Spacing for paragraphs */
-    line-height: 1.5; /* Line height for better readability */
-    font-size: 1rem; /* Font size for paragraphs */
+    margin: 10px 0;
+    line-height: 1.6; /* Increased line height for better readability */
+    font-size: 1.1rem; /* Slightly larger font size for paragraphs */
+    color: #e0e0e0; /* Light gray for better contrast against background */
 }
