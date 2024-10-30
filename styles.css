@@ -8,7 +8,7 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 20px; /* Add padding to prevent overflow */
+    padding: 20px; /* Padding to prevent overflow */
     box-sizing: border-box; /* Include padding in width calculations */
 }
 
@@ -17,22 +17,24 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 100%; /* Make it full width */
-    max-width: 400px; /* Limit the max width for larger screens */
+    max-width: 500px; /* Limit the max width for larger screens */
 }
 
 #timer {
     display: flex;
-    justify-content: space-around; /* Space items evenly */
+    justify-content: space-between; /* Space items evenly */
     margin-top: 20px;
     flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .time {
-    font-size: 2rem; /* Slightly smaller font size for better fit */
-    margin: 5px; /* Add margin for spacing */
+    font-size: 4rem; /* Increase font size for better visibility */
+    margin: 0; /* Remove margin */
+    flex: 1; /* Make the time elements flexible */
+    text-align: center; /* Center the text */
 }
 
 .label {
-    font-size: 0.8rem; /* Smaller font size for labels */
+    font-size: 1rem; /* Slightly larger for better readability */
     margin-top: 5px;
 }
