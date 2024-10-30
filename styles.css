@@ -25,19 +25,19 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    flex-wrap: wrap;
 }
 
-.time {
-    font-size: 2.5rem; /* Reduced font size for the timer */
-    margin: 0;
-    flex: 1;
-    text-align: center;
+.time-container {
+    flex: 1; /* Equal width for all containers */
 }
 
 .label {
     font-size: 1rem; /* Font size for labels */
-    margin-top: 5px;
+    margin-bottom: 5px; /* Spacing between label and time */
+}
+
+.time {
+    font-size: 3rem; /* Increased font size for time values */
 }
 
 .scrollable-text {
