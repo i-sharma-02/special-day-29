@@ -8,33 +8,67 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 20px; /* Padding to prevent overflow */
-    box-sizing: border-box; /* Include padding in width calculations */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .countdown {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    width: 100%; /* Make it full width */
-    max-width: 500px; /* Limit the max width for larger screens */
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden; /* Hide overflow of the main container */
 }
 
 #timer {
     display: flex;
-    justify-content: space-between; /* Space items evenly */
+    justify-content: space-between;
     margin-top: 20px;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
+    flex-wrap: wrap;
 }
 
 .time {
-    font-size: 4rem; /* Increase font size for better visibility */
-    margin: 0; /* Remove margin */
-    flex: 1; /* Make the time elements flexible */
-    text-align: center; /* Center the text */
+    font-size: 4rem;
+    margin: 0;
+    flex: 1;
+    text-align: center;
 }
 
 .label {
-    font-size: 1rem; /* Slightly larger for better readability */
+    font-size: 1rem;
     margin-top: 5px;
+}
+
+.scrollable-text {
+    max-height: 200px; /* Set max height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05); /* Slightly different background */
+    border-radius: 5px;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #282c34; /* Firefox */
+}
+
+.scrollable-text::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.scrollable-text::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.scrollable-text::-webkit-scrollbar-track {
+    background: #282c34; /* Background of the scrollbar track */
+}
+
+.separator {
+    border-top: 2px solid #ffffff; /* White separator line */
+    margin: 10px 0; /* Spacing above and below the separator */
+}
+
+p {
+    margin: 10px 0; /* Spacing for paragraphs */
 }
