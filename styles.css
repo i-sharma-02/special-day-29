@@ -3,29 +3,36 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
     background-color: #282c34;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
+    padding: 20px; /* Add padding to prevent overflow */
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .countdown {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
+    width: 100%; /* Make it full width */
+    max-width: 400px; /* Limit the max width for larger screens */
 }
 
 #timer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Space items evenly */
     margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .time {
-    font-size: 2rem;
-    margin: 0 10px;
+    font-size: 2rem; /* Slightly smaller font size for better fit */
+    margin: 5px; /* Add margin for spacing */
 }
 
 .label {
-    font-size: 1rem;
+    font-size: 0.8rem; /* Smaller font size for labels */
+    margin-top: 5px;
 }
